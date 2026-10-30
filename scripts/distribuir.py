@@ -1,13 +1,16 @@
-"""Sorteia quem escreve a suíte humana e quem opera a IA em cada falha, e monta um zip por pessoa.
+"""Sorteia quem escreve a suíte humana e quem opera a IA em cada falha, a ordem em que cada
+pessoa faz as suas falhas, e monta um zip por falha (entregue só quando a anterior é entregue).
 
 Restrições:
   - Cada falha recebe exatamente 1 suíte humana. Quem tem cota 2 recebe 1 falha do Lang e
     1 do Math; entre os dois de cota 3, um recebe 2 Lang + 1 Math e o outro 1 Lang + 2 Math.
   - Cada operador de IA roda 4 falhas (2 Lang + 2 Math), nunca uma em que escreveu a suíte humana.
   - Sorteio com a mesma semente do protocolo; combinações que violam as restrições são descartadas.
+    A ordem é sorteada depois, então não altera a distribuição.
 
 Uso: python scripts/distribuir.py privado/amostra.csv kit privado/distribuicao
-Saída: <saida>/distribuicao.csv, <saida>/humano_<Nome>.zip, <saida>/ia_<Nome>.zip, <saida>/aquecimento.zip
+Saída: <saida>/distribuicao.csv, <saida>/ordem.csv, <saida>/aquecimento.zip,
+       <saida>/humano/<Nome>_<n>_<código>.zip, <saida>/ia/<Nome>_<n>_<código>.zip
 """
 import csv
 import random
@@ -73,10 +76,18 @@ def main(amostra, kit, saida):
         for l in falhas:
             w.writerow([l["codigo"], l["projeto"], humano[l["codigo"]], ia[l["codigo"]]])
 
-    for nome in COTA_HUMANA:
-        zipa(saida / f"humano_{nome}.zip", kit, [c for c, n in humano.items() if n == nome])
-    for nome in OPERADORES_IA:
-        zipa(saida / f"ia_{nome}.zip", kit, [c for c, n in ia.items() if n == nome])
+    with open(saida / "ordem.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["papel", "pessoa", "ordem", "codigo", "zip"])
+        for papel, atribuicao, pessoas in [("humano", humano, COTA_HUMANA), ("ia", ia, OPERADORES_IA)]:
+            (saida / papel).mkdir(exist_ok=True)
+            for nome in pessoas:
+                codigos = rng.sample(sorted(c for c, n in atribuicao.items() if n == nome),
+                                     sum(1 for n in atribuicao.values() if n == nome))
+                for ordem, codigo in enumerate(codigos, 1):
+                    arquivo = f"{papel}/{nome}_{ordem}_{codigo}.zip"
+                    zipa(saida / arquivo, kit, [codigo])
+                    w.writerow([papel, nome, ordem, codigo, arquivo])
     zipa(saida / "aquecimento.zip", kit, ["P01"])
 
 
