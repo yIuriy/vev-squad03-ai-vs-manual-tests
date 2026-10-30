@@ -72,6 +72,10 @@ public void rejeitaNegativoComMensagem() {
 public void terminaRapido() { ... }
 ```
 
+## Métodos herdados
+
+A classe sob teste pode ter métodos públicos **herdados da classe mãe**, que não aparecem no arquivo dela, mas fazem parte da API. Para ver todos: escreva o nome do objeto, um ponto e aperte **`Ctrl+Espaço`** (por exemplo `obj.` + `Ctrl+Espaço`). A classe mãe aparece na declaração `extends` da classe.
+
 ## Lembretes
 
 - **Um comportamento por método**, com nome que diga o que é verificado.
