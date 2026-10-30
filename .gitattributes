@@ -1,0 +1,2 @@
+# Mantém LF em todos os arquivos de texto: os scripts rodam no Linux do container e os SHA-256 do log dependem dos bytes exatos
+* text=auto eol=lf
