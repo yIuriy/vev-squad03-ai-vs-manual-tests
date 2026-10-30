@@ -2,6 +2,8 @@
 
 > **Status: CONGELADO em 2026-10-30**, antes da S3. O SHA-256 deste arquivo está no log de curadoria.
 > Responsável: curador (Iuri).
+>
+> **Emenda de 2026-10-30, antes da S2 (alinhamento ao artigo, seções 3.4 e 3.5):** a cobertura principal passa a ser medida na **versão corrigida**, e não na versão com bug. Os métodos de teste que continuam sem compilar após a revisão mecânica são comentados. Nenhuma suíte tinha sido medida. O script já registrava a cobertura nas duas versões e não muda.
 
 ## Ferramentas
 
@@ -11,7 +13,7 @@
 ## Procedimento por suíte
 
 1. A suíte é compilada contra a versão com bug (b) e contra a corrigida (f), só com as classes e bibliotecas do projeto, sem os testes originais dele.
-2. Se não compilar, a suíte vai para o revisor mecânico, que aplica só as correções da lista fechada, e depois volta para a medição.
+2. Se não compilar, a suíte vai para o revisor mecânico, que aplica só as correções da lista fechada (imports faltando, casts explícitos, assinaturas visíveis, `throws` não declarados e pontuação), registradas no log de auditoria. O revisor não altera entradas, valores esperados, asserts nem a lógica, e não adiciona testes. Os métodos que continuam sem compilar são comentados, e a suíte volta para a medição.
 3. Cada teste roda isoladamente, com limite de 30 segundos, **3 vezes em cada versão**.
 4. O JaCoCo mede a cobertura só da **classe sob teste**, incluindo as classes internas dela.
 
@@ -28,7 +30,8 @@
 ## Métricas por suíte
 
 - **Detecção da falha (sim/não):** a suíte detecta se tem **pelo menos 1 teste DETECTA**. Falsos alarmes e testes instáveis não anulam a detecção, mas são contados e relatados à parte.
-- **Cobertura de linha e de branch:** medida na **versão com bug**, que é a versão entregue aos testadores e à IA. A cobertura na versão corrigida também é registrada.
+- **Cobertura de linha e de branch:** medida na **versão corrigida**, para que exceções causadas pelo defeito não interrompam a execução (artigo, seção 3.4). Todos os testes que compilam e executam contam, passando ou falhando. A cobertura na versão com bug também é registrada, como dado auxiliar.
+- **Condição de IA:** detecção por falha expressa como k/3 nas três execuções, e a cobertura resumida por média, mediana e desvio padrão.
 - **Contagens auxiliares:** número de testes, de testes DETECTA, de falsos alarmes e de instáveis.
 
 ## Verificação do script (pilotos)

@@ -48,10 +48,11 @@ def sorteia_ia(rng, lang, math, humano):
 
 def zipa(destino, kit, codigos):
     with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
-        z.write(kit / "INSTRUCOES.md", "INSTRUCOES.md")
+        for nome in ["INSTRUCOES.md", "PERFIL_VSCODE.md", "JUNIT.md"]:
+            z.write(kit / nome, nome)
         for codigo in sorted(codigos):
-            for arq in sorted((kit / codigo).iterdir()):
-                z.write(arq, f"{codigo}/{arq.name}")
+            for arq in sorted(p for p in (kit / codigo).rglob("*") if p.is_file()):
+                z.write(arq, arq.relative_to(kit).as_posix())
 
 
 def main(amostra, kit, saida):
