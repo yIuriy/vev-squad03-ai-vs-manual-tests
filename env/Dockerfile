@@ -22,5 +22,11 @@ RUN git clone --depth 1 --branch v3.0.1 https://github.com/rjust/defects4j.git $
 
 ENV PATH=$D4J_HOME/framework/bin:$PATH
 
+# JaCoCo para medir cobertura de linha e de branch das suítes do experimento
+ENV JACOCO_HOME=/opt/jacoco
+RUN curl -fsSL -o /tmp/jacoco.zip https://repo1.maven.org/maven2/org/jacoco/jacoco/0.8.12/jacoco-0.8.12.zip \
+    && unzip -q /tmp/jacoco.zip 'lib/*' -d $JACOCO_HOME \
+    && rm /tmp/jacoco.zip
+
 WORKDIR /work
 CMD ["bash"]
