@@ -21,10 +21,9 @@ No Google AI Studio, escolham **um único modelo** e **uma configuração**, que
 
 ### 1.2 Requisitos do prompt
 
-O prompt é **o mesmo para todas as falhas**. Só podem variar dois campos:
+O prompt é **o mesmo para todas as falhas**. Só varia o campo `{CODIGO}`, o código neutro da falha (ex.: `F03`). Antes de enviar, ele é **substituído pelo valor real, sem as chaves** (`{CODIGO}Test` vira `F03Test`). Um marcador esquecido faz a IA ignorar o nome pedido.
 
-- `{CODIGO}`: o código neutro da falha (ex.: `F03`)
-- `{CLASSE}`: o conteúdo completo do arquivo `.java` da classe sob teste, em `src/` na pasta da falha, colado sem alteração
+A classe sob teste **não é colada no texto**: vai como **arquivo anexo** (ver 2.1). Todas as classes têm links no cabeçalho de licença, e o AI Studio bloqueia o envio de texto com links quando o URL Context está desligado. O anexo leva o arquivo idêntico ao que os testadores receberam.
 
 O prompt deve pedir **as mesmas coisas que os testadores receberam** no `INSTRUCOES.md`, e nada além:
 
@@ -50,7 +49,7 @@ O prompt deve pedir **as mesmas coisas que os testadores receberam** no `INSTRUC
 
 ### 1.4 O que entregar ao curador (antes da S3)
 
-- `prompt_final.txt`: o texto final, com os campos `{CODIGO}` e `{CLASSE}`
+- `prompt_final.txt`: o texto final, com o campo `{CODIGO}`
 - Modelo (ID exato), configuração completa e a data
 - Print da tela de configuração do AI Studio
 - As versões anteriores do prompt e as respostas do piloto
@@ -61,13 +60,20 @@ O curador congela tudo com hash. **Depois disso, nada muda.**
 
 Só começa depois do prompt congelado. Cada operador recebe **um zip por falha** (4 falhas) e faz **3 execuções** de cada uma, seguidas.
 
-Para cada execução:
+### 2.1 Preparar a falha (uma vez por falha)
+
+1. Extraiam o zip da falha. A classe sob teste está em `src/…/<Classe>.java`.
+2. Façam uma **cópia** desse arquivo e **renomeiem a cópia para `<Classe>.txt`**. O AI Studio rejeita anexos `.java` com o erro *"Inline data requires a mime_type"*. No Windows, ativem *Exibir → Extensões de nomes de arquivos* para não gerar `<Classe>.txt.java`. O conteúdo não muda.
+3. Num editor de texto, abram o prompt congelado e troquem **`{CODIGO}` pelo código da falha, sem chaves** (`Ctrl+H`). Confiram que não sobrou nenhum `{` no texto.
+
+### 2.2 Cada execução (3 por falha)
 
 1. Abram uma **conversa nova** no AI Studio
-2. Confiram o **modelo e a configuração** (iguais aos congelados)
-3. Colem o **prompt congelado**, preenchendo `{CODIGO}` e `{CLASSE}`
-4. **Uma geração só**: sem pedir correção, sem gerar de novo, sem editar a resposta
-5. Copiem a **resposta inteira** para `{CODIGO}_exec{N}.md` (ex.: `F06_exec1.md`)
-6. Mandem ao curador **na hora**, com o horário
+2. Confiram o **modelo e a configuração** (iguais aos congelados): busca do Google, URL Context, execução de código, function calling e saída estruturada **desligados**
+3. Colem o prompt preenchido e **anexem o `<Classe>.txt`**
+4. Se aparecer o aviso *"Enable URL Context"*, **não ativem**: fechem no X
+5. Enviem **uma vez**: sem pedir correção, sem gerar de novo, sem editar a resposta
+6. Copiem a **resposta inteira pelo botão de copiar da própria mensagem** (não selecionando com o mouse) para `{CODIGO}_exec{N}.md` (ex.: `F06_exec1.md`)
+7. Mandem ao curador **na hora**, com o horário
 
 Na primeira execução do dia, mandem também um print da configuração. Se algo der errado (resposta cortada, erro do AI Studio), **não repitam por conta própria**: avisem o curador, que decide e registra.
