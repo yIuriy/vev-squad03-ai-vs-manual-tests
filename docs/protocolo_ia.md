@@ -60,17 +60,24 @@ O curador congela tudo com hash. **Depois disso, nada muda.**
 
 Só começa depois do prompt congelado. Cada operador recebe **um zip por falha** (4 falhas) e faz **3 execuções** de cada uma, seguidas.
 
-### 2.1 Preparar a falha (uma vez por falha)
+### 2.1 O zip de cada falha
 
-1. Extraiam o zip da falha. A classe sob teste está em `src/…/<Classe>.java`.
-2. Façam uma **cópia** desse arquivo e **renomeiem a cópia para `<Classe>.txt`**. O AI Studio rejeita anexos `.java` com o erro *"Inline data requires a mime_type"*. No Windows, ativem *Exibir → Extensões de nomes de arquivos* para não gerar `<Classe>.txt.java`. O conteúdo não muda.
-3. Num editor de texto, abram o prompt congelado e troquem **`{CODIGO}` pelo código da falha, sem chaves** (`Ctrl+H`). Confiram que não sobrou nenhum `{` no texto.
+O curador prepara tudo, e não há nada para renomear nem substituir. Cada zip da S3 traz:
+
+```
+PROTOCOLO_IA.md
+F06/
+├── PROMPT.txt        ← prompt congelado, já com o código da falha (F06Test)
+└── <Classe>.txt      ← a classe sob teste, idêntica à dos testadores, em .txt para o anexo
+```
+
+A classe vai em `.txt` porque o AI Studio rejeita anexos `.java` (*"Inline data requires a mime_type"*). O conteúdo é o mesmo arquivo dos testadores.
 
 ### 2.2 Cada execução (3 por falha)
 
 1. Abram uma **conversa nova** no AI Studio
 2. Confiram o **modelo e a configuração** (iguais aos congelados): busca do Google, URL Context, execução de código, function calling e saída estruturada **desligados**
-3. Colem o prompt preenchido e **anexem o `<Classe>.txt`**
+3. Colem o conteúdo do `PROMPT.txt` e **anexem o `<Classe>.txt`**
 4. Se aparecer o aviso *"Enable URL Context"*, **não ativem**: fechem no X
 5. Enviem **uma vez**: sem pedir correção, sem gerar de novo, sem editar a resposta
 6. Copiem a **resposta inteira pelo botão de copiar da própria mensagem** (não selecionando com o mouse) para `{CODIGO}_exec{N}.md` (ex.: `F06_exec1.md`)

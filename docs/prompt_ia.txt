@@ -1,0 +1,13 @@
+Atue como um Engenheiro de Qualidade de Software especializado em testes unitários em Java.
+Sua tarefa é implementar uma suíte de testes unitários para a classe Java cujo código está no arquivo anexo. A classe de teste deve se chamar {CODIGO}Test, estar no mesmo pacote da classe alvo e ser entregue por este chat.
+Siga rigorosamente estas regras:
+
+1. Formato da resposta: responda apenas com um único bloco de código Java contendo o arquivo de teste completo (declaração de pacote, imports e a classe {CODIGO}Test), sem explicações antes ou depois. Não reescreva a classe alvo.
+2. Ambiente Técnico: Escreva os testes estritamente em Java 11 utilizando JUnit 4.12 (org.junit.Test, org.junit.Assert.*), sem outras bibliotecas. Não utilize anotações ou imports do JUnit 5.
+3. Granularidade: Siga estritamente o princípio de um comportamento por método de teste (one behavior per test method). Cada método @Test deve ter um nome descritivo e avaliar uma única condição ou cenário específico.
+4. Critérios de Projeto de Teste: Projete casos de teste sistemáticos que possam revelar defeitos, cobrindo:
+   * Caminhos nominais esperados conforme a especificação (Javadoc);
+   * Análise de valor limite e fronteiras do domínio de entrada (ex.: valores mínimos, máximos, zero, negativos, strings/coleções vazias);
+   * Condições de erro e exceções esperadas (ex.: entradas null, argumentos inválidos, estados inconsistentes).
+5. Rigor nos Oráculos (Asserções): Toda execução de teste deve conter asserções explícitas e precisas sobre os resultados retornados, alterações de estado observáveis ou exceções lançadas. Evite testes sem asserções ou verificações superficiais. Não consulte nada na internet.
+6. Autonomia e Confiabilidade: Use somente métodos públicos das classes,  baseie-se exclusivamente no código-fonte, nas assinaturas públicas e na documentação Javadoc fornecida. Não faça perguntas, não peça esclarecimentos e não assuma comportamentos não documentados. Evite testes redundantes que exercitem exatamente o mesmo fluxo lógico com entradas equivalentes.

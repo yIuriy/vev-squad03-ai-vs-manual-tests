@@ -22,6 +22,8 @@ SEMENTE = 7202620  # registrada no protocolo como "07202620"
 COTA_HUMANA = {"Dyonathan": 2, "Lara": 3, "Tamires": 3, "Rafaela": 2, "Sidnei": 2}
 OPERADORES_IA = ["Dyonathan", "Rafaela", "Sidnei"]
 FALHAS_POR_OPERADOR = 4
+PROMPT_IA = Path("docs/prompt_ia.txt")
+PROTOCOLO_IA = Path("docs/protocolo_ia.md")
 
 
 def sorteia_humanos(rng, lang, math):
@@ -58,6 +60,19 @@ def zipa(destino, kit, codigos):
                 z.write(arq, arq.relative_to(kit).as_posix())
 
 
+def zipa_ia(destino, kit, codigo):
+    """Zip do operador de IA: o protocolo, o prompt já preenchido com o código da falha e a
+    classe sob teste como .txt (o AI Studio só aceita o anexo como texto)."""
+    prompt = PROMPT_IA.read_text(encoding="utf-8").replace("{CODIGO}", codigo)
+    if "{" in prompt:
+        sys.exit(f"marcador não substituído no prompt de {codigo}")
+    classe = next((kit / codigo / "src").rglob("*.java"))
+    with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
+        z.write(PROTOCOLO_IA, "PROTOCOLO_IA.md")
+        z.writestr(f"{codigo}/PROMPT.txt", prompt)
+        z.write(classe, f"{codigo}/{classe.stem}.txt")
+
+
 def main(amostra, kit, saida):
     kit, saida = Path(kit), Path(saida)
     saida.mkdir(parents=True, exist_ok=True)
@@ -86,7 +101,10 @@ def main(amostra, kit, saida):
                                      sum(1 for n in atribuicao.values() if n == nome))
                 for ordem, codigo in enumerate(codigos, 1):
                     arquivo = f"{papel}/{nome}_{ordem}_{codigo}.zip"
-                    zipa(saida / arquivo, kit, [codigo])
+                    if papel == "ia":
+                        zipa_ia(saida / arquivo, kit, codigo)
+                    else:
+                        zipa(saida / arquivo, kit, [codigo])
                     w.writerow([papel, nome, ordem, codigo, arquivo])
     zipa(saida / "aquecimento.zip", kit, ["P01"])
 
