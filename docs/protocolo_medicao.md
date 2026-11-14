@@ -6,6 +6,8 @@
 > **Emenda de 2026-10-30, antes da S2 (alinhamento ao artigo, seções 3.4 e 3.5):** a cobertura principal passa a ser medida na **versão corrigida**, e não na versão com bug. Os métodos de teste que continuam sem compilar após a revisão mecânica são comentados. Nenhuma suíte tinha sido medida. O script já registrava a cobertura nas duas versões e não muda.
 >
 > **Emenda de 2026-11-14, durante a S3 e antes de medir qualquer suíte de IA:** a condição de IA passa a ter **uma execução por falha** (12 suítes), em vez de três (36). A comparação fica pareada uma a uma (1 suíte humana × 1 suíte de IA por falha). Deixam de existir a detecção k/3 e o desvio padrão entre execuções. A variabilidade do modelo não é medida e fica como ameaça à validade.
+>
+> **Emenda de 2026-11-14, antes da revisão mecânica:** a revisão mecânica é feita pelo curador, que não é autor de nenhuma suíte, e não pelos testadores em rodízio. Como o curador conhece os defeitos, ele se limita estritamente à lista fechada; qualquer outro erro leva o método a ser comentado.
 
 ## Ferramentas
 
