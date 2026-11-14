@@ -80,7 +80,7 @@ A classe vai em `.txt` porque o AI Studio rejeita anexos `.java` (*"Inline data 
 3. Colem o conteúdo do `PROMPT.txt` e **anexem o `<Classe>.txt`**
 4. Se aparecer o aviso *"Enable URL Context"*, **não ativem**: fechem no X
 5. Enviem **uma vez**: sem pedir correção, sem gerar de novo, sem editar a resposta
-6. Copiem a **resposta inteira pelo botão de copiar da própria mensagem** (não selecionando com o mouse) para `{CODIGO}_exec{N}.md` (ex.: `F06_exec1.md`)
-7. Mandem ao curador **na hora**, com o horário
+6. Copiem o **bloco de código** pelo botão de copiar do próprio bloco (não selecionando com o mouse) e salvem como `{CODIGO}_exec{N}.java` (ex.: `F06_exec1.java`), sem editar nada. Se a resposta tiver **qualquer texto fora do bloco**, copiem a **mensagem inteira** pelo botão da mensagem e salvem como `{CODIGO}_exec{N}.md`
+7. Mandem ao curador **na hora**, com o horário, confirmando que a resposta tinha só o bloco de código
 
 Na primeira execução do dia, mandem também um print da configuração. Se algo der errado (resposta cortada, erro do AI Studio), **não repitam por conta própria**: avisem o curador, que decide e registra.
