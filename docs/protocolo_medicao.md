@@ -4,6 +4,8 @@
 > Responsável: curador (Iuri).
 >
 > **Emenda de 2026-10-30, antes da S2 (alinhamento ao artigo, seções 3.4 e 3.5):** a cobertura principal passa a ser medida na **versão corrigida**, e não na versão com bug. Os métodos de teste que continuam sem compilar após a revisão mecânica são comentados. Nenhuma suíte tinha sido medida. O script já registrava a cobertura nas duas versões e não muda.
+>
+> **Emenda de 2026-11-14, durante a S3 e antes de medir qualquer suíte de IA:** a condição de IA passa a ter **uma execução por falha** (12 suítes), em vez de três (36). A comparação fica pareada uma a uma (1 suíte humana × 1 suíte de IA por falha). Deixam de existir a detecção k/3 e o desvio padrão entre execuções. A variabilidade do modelo não é medida e fica como ameaça à validade.
 
 ## Ferramentas
 
@@ -31,7 +33,7 @@
 
 - **Detecção da falha (sim/não):** a suíte detecta se tem **pelo menos 1 teste DETECTA**. Falsos alarmes e testes instáveis não anulam a detecção, mas são contados e relatados à parte.
 - **Cobertura de linha e de branch:** medida na **versão corrigida**, para que exceções causadas pelo defeito não interrompam a execução (artigo, seção 3.4). Todos os testes que compilam e executam contam, passando ou falhando. A cobertura na versão com bug também é registrada, como dado auxiliar.
-- **Condição de IA:** detecção por falha expressa como k/3 nas três execuções, e a cobertura resumida por média, mediana e desvio padrão.
+- **Condição de IA:** uma suíte por falha, comparada par a par com a suíte humana da mesma falha (emenda de 2026-11-14).
 - **Contagens auxiliares:** número de testes, de testes DETECTA, de falsos alarmes e de instáveis.
 
 ## Verificação do script (pilotos)

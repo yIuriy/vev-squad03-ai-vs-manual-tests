@@ -58,7 +58,7 @@ O curador congela tudo com hash. **Depois disso, nada muda.**
 
 ## Etapa 2: sessão de IA (S3)
 
-Só começa depois do prompt congelado. Cada operador recebe **um zip por falha** (4 falhas) e faz **3 execuções** de cada uma, seguidas.
+Só começa depois do prompt congelado. Cada operador recebe **um zip por falha** (4 falhas) e faz **uma única execução** de cada uma (emenda de 2026-11-14; o plano original era de 3 execuções por falha).
 
 ### 2.1 O zip de cada falha
 
@@ -73,14 +73,14 @@ F06/
 
 A classe vai em `.txt` porque o AI Studio rejeita anexos `.java` (*"Inline data requires a mime_type"*). O conteúdo é o mesmo arquivo dos testadores.
 
-### 2.2 Cada execução (3 por falha)
+### 2.2 A execução (uma por falha)
 
 1. Abram uma **conversa nova** no AI Studio
 2. Confiram o **modelo e a configuração** (iguais aos congelados): busca do Google, URL Context, execução de código, function calling e saída estruturada **desligados**
 3. Colem o conteúdo do `PROMPT.txt` e **anexem o `<Classe>.txt`**
 4. Se aparecer o aviso *"Enable URL Context"*, **não ativem**: fechem no X
 5. Enviem **uma vez**: sem pedir correção, sem gerar de novo, sem editar a resposta
-6. Copiem o **bloco de código** pelo botão de copiar do próprio bloco (não selecionando com o mouse) e salvem como `{CODIGO}_exec{N}.java` (ex.: `F06_exec1.java`), sem editar nada. Se a resposta tiver **qualquer texto fora do bloco**, copiem a **mensagem inteira** pelo botão da mensagem e salvem como `{CODIGO}_exec{N}.md`
+6. Copiem o **bloco de código** pelo botão de copiar do próprio bloco (não selecionando com o mouse) e salvem como `{CODIGO}Test.java` (ex.: `F06Test.java`), sem editar nada. Se a resposta tiver **qualquer texto fora do bloco**, copiem a **mensagem inteira** pelo botão da mensagem e salvem como `{CODIGO}_resposta.md`
 7. Mandem ao curador **na hora**, com o horário, confirmando que a resposta tinha só o bloco de código
 
 Na primeira execução do dia, mandem também um print da configuração. Se algo der errado (resposta cortada, erro do AI Studio), **não repitam por conta própria**: avisem o curador, que decide e registra.
