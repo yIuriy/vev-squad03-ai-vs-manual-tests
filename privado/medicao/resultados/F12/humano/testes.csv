@@ -1,0 +1,4 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.math.stat.F12Test::getSumFreqTest,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FALSO_ALARME
+org.apache.commons.math.stat.F12Test::addValueTest,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.stat.F12Test::clearTest,PASS,PASS,PASS,PASS,PASS,PASS,PASSA

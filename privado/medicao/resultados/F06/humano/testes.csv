@@ -1,0 +1,6 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.math.stat.clustering.F06Test::testeListaVazia,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.stat.clustering.F06Test::testeUmPontoPorCluster,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.stat.clustering.F06Test::testePontosAgrupados,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.stat.clustering.F06Test::testeUmCluster,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.stat.clustering.F06Test::testePontosNegativos,PASS,PASS,PASS,PASS,PASS,PASS,PASSA

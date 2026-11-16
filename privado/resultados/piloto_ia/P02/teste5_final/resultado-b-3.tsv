@@ -1,0 +1,5 @@
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserBasicLogic	PASS
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserConstructorThrowsExceptionOnInsufficientPoints	PASS
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserConstructorThrowsExceptionOnNullInput	PASS
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserEncapsulation	PASS
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserReturnsClone	PASS

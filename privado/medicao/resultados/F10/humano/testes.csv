@@ -1,0 +1,4 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.lang.F10Test::testEmptyLocale,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.F10Test::testInvalidLocale,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.F10Test::testLocaleWithNull,PASS,PASS,PASS,PASS,PASS,PASS,PASSA

@@ -1,0 +1,5 @@
+org.apache.commons.math.fraction.F02Test::testFractionInDouble	FAIL
+org.apache.commons.math.fraction.F02Test::testGetDenominator	FAIL
+org.apache.commons.math.fraction.F02Test::testGetNumerator	PASS
+org.apache.commons.math.fraction.F02Test::testIntValue	FAIL
+org.apache.commons.math.fraction.F02Test::testNegativeDenominator	PASS

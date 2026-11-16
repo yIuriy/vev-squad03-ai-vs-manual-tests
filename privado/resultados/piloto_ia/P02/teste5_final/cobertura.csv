@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoCo Coverage Report,org.apache.commons.math.optimization.fitting,GaussianFitter.new ParametricUnivariateRealFunction() {...},48,0,0,0,12,0,3,0,3,0
+JaCoCo Coverage Report,org.apache.commons.math.optimization.fitting,GaussianFitter.ParameterGuesser.new Comparator() {...},44,26,15,5,13,7,10,2,0,2
+JaCoCo Coverage Report,org.apache.commons.math.optimization.fitting,GaussianFitter.ParameterGuesser,17,334,8,30,4,54,8,19,0,8
+JaCoCo Coverage Report,org.apache.commons.math.optimization.fitting,GaussianFitter,25,0,0,0,6,0,3,0,3,0

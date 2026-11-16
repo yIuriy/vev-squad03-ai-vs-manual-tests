@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src", "test"],
+    "java.project.referencedLibraries": ["lib/**/*.jar"],
+    "java.project.outputPath": "bin",
+    "java.settings.url": ".vscode/java.prefs",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false,
+    "editor.inlineSuggest.enabled": false
+}

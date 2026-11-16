@@ -1,0 +1,21 @@
+# privado/ e kit/ ficaram fora do repositório até o fim das sessões (sigilo das falhas).
+# Publicados depois que as 24 suítes foram congeladas e medidas, com estas exceções:
+
+# Relatórios do Google Meet com e-mails dos participantes (versão sem e-mails: os .csv ao lado)
+privado/evidencias/*.xlsx
+
+# Arquivos sem relação com o experimento salvos por engano na pasta de recebidos
+privado/recebidos/ia/GTAIVSetupUtility.exe
+privado/recebidos/ia/GTAIVSetupUtilityLog.txt
+privado/recebidos/ia/challenge-sbpo-2025-master.zip
+privado/recebidos/ia/Andamento 4 — Squad 03 (entrega).pdf
+
+# Rascunhos do relatório da entrega
+privado/entrega/
+
+# Suítes compiladas pelo scripts/medir.sh (regeneradas a cada medição)
+privado/**/bin-b/
+privado/**/bin-f/
+
+# Backups locais da pasta privado/
+/privado*.zip

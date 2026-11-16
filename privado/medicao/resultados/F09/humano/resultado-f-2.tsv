@@ -1,0 +1,3 @@
+org.apache.commons.lang3.F09Test::testCloneInteger	PASS
+org.apache.commons.lang3.F09Test::testCloneNull	PASS
+org.apache.commons.lang3.F09Test::testCloneString	PASS

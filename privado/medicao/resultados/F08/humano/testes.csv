@@ -1,0 +1,7 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.lang.text.F08Test::testeSemArgu,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.text.F08Test::testeAlterarPad,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.text.F08Test::testePadVazio,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.text.F08Test::testeIndiceInvalido,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.text.F08Test::testeSubDoisArgu,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang.text.F08Test::testeSubUmArgu,PASS,PASS,PASS,PASS,PASS,PASS,PASSA

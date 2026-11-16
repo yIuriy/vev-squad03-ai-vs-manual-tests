@@ -1,0 +1,7 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.lang3.text.translate.P01Test::traduzIndiceComWriter,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang3.text.translate.P01Test::chaveQueNaoEhStringTambemFunciona,FAIL,FAIL,FAIL,PASS,PASS,PASS,DETECTA
+org.apache.commons.lang3.text.translate.P01Test::textoVazioFicaVazio,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang3.text.translate.P01Test::trocaChaveQueEstaNaTabela,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang3.text.translate.P01Test::prefereAChaveMaisLonga,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang3.text.translate.P01Test::textoSemChaveFicaIgual,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
