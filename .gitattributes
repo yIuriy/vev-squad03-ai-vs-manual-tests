@@ -1,2 +1,6 @@
 # Mantém LF em todos os arquivos de texto: os scripts rodam no Linux do container e os SHA-256 do log dependem dos bytes exatos
 * text=auto eol=lf
+
+# Material do experimento com SHA-256 registrado no log: guardado byte a byte, sem conversão de quebra de linha
+privado/** -text
+kit/** -text

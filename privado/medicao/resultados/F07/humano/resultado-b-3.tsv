@@ -1,0 +1,5 @@
+org.apache.commons.lang.F07Test::NegativoNãoEFalso	PASS
+org.apache.commons.lang.F07Test::toBooleanObjectTest	PASS
+org.apache.commons.lang.F07Test::verdadeiroEVerdadeiro	PASS
+org.apache.commons.lang.F07Test::verificarFalsidade	PASS
+org.apache.commons.lang.F07Test::xorTest	PASS

@@ -1,0 +1,3 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882,FAIL,FAIL,FAIL,PASS,PASS,PASS,DETECTA
+org.apache.commons.lang3.text.translate.LookupTranslatorTest::testBasicLookup,PASS,PASS,PASS,PASS,PASS,PASS,PASSA

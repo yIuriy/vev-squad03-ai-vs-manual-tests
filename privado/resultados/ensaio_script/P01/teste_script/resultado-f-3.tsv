@@ -1,0 +1,6 @@
+org.apache.commons.lang3.text.translate.P01Test::chaveQueNaoEhStringTambemFunciona	PASS
+org.apache.commons.lang3.text.translate.P01Test::prefereAChaveMaisLonga	PASS
+org.apache.commons.lang3.text.translate.P01Test::textoSemChaveFicaIgual	PASS
+org.apache.commons.lang3.text.translate.P01Test::textoVazioFicaVazio	PASS
+org.apache.commons.lang3.text.translate.P01Test::traduzIndiceComWriter	PASS
+org.apache.commons.lang3.text.translate.P01Test::trocaChaveQueEstaNaTabela	PASS

@@ -1,0 +1,11 @@
+org.apache.commons.math.geometry.F05Test::testeCoordenadas	PASS
+org.apache.commons.math.geometry.F05Test::testeDistancia	PASS
+org.apache.commons.math.geometry.F05Test::testeMultiplicacao	PASS
+org.apache.commons.math.geometry.F05Test::testeMultiplicacaoPorZero	PASS
+org.apache.commons.math.geometry.F05Test::testeNaN	PASS
+org.apache.commons.math.geometry.F05Test::testeNorma	PASS
+org.apache.commons.math.geometry.F05Test::testeNormalizacao	PASS
+org.apache.commons.math.geometry.F05Test::testeNormalizacaoZero	FAIL
+org.apache.commons.math.geometry.F05Test::testeSoma	PASS
+org.apache.commons.math.geometry.F05Test::testeSubtracao	PASS
+org.apache.commons.math.geometry.F05Test::testeVetorZero	PASS

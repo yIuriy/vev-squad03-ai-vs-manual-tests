@@ -1,0 +1,165 @@
+codigo	linha_original	tipo	texto_removido
+F01	157	comentario_linha	// Multi-start loop.
+F01	181	comentario_linha	// Return the point with the best objective function value.
+F02	124	referencia_issue	MATH-181
+F02	126	referencia_issue	https://issues.apache.org/jira/browse/MATH-181
+F02	146	comentario_linha	// check for (almost) integer arguments, which should not go
+F02	147	comentario_linha	// to iterations.
+F02	222	comentario_linha	// reduce numerator and denominator by greatest common denominator.
+F02	229	comentario_linha	// move sign to numerator.
+F02	291	comentario_linha	// since fractions are always in lowest terms, numerators and
+F02	292	comentario_linha	// denominators can be compared directly for equality.
+F02	297	comentario_linha	// ignore exception
+F02	418	comentario_linha	// zero is identity for addition.
+F02	425	comentario_linha	// if denominators are randomly distributed, d1 will be 1 about 61%
+F02	426	comentario_linha	// of the time.
+F02	429	comentario_linha	// result is ( (u*v' +/- u'v) / u'v')
+F02	437	comentario_linha	// the quantity 't' requires 65 bits of precision; see knuth 4.5.1
+F02	438	comentario_linha	// exercise 7.  we're going to use a BigInteger.
+F02	439	comentario_linha	// t = u(v'/d1) +/- v(u'/d1)
+F02	445	comentario_linha	// but d2 doesn't need extra precision because
+F02	446	comentario_linha	// d2 = gcd(t,d1) = gcd(t mod d1, d1)
+F02	450	comentario_linha	// result is (t/d2) / (u'/d1)(v'/d2)
+F02	478	comentario_linha	// knuth 4.5.1
+F02	479	comentario_linha	// make sure we don't overflow unless the result *must* overflow.
+F02	527	comentario_linha	// normalize zero.
+F02	529	comentario_linha	// allow 2^k/-2^31 as a valid fraction (where k>0)
+F02	543	comentario_linha	// simplify fraction.
+F03	52	comentario_linha	// running states
+F03	58	comentario_linha	// split state
+F04	121	comentario_linha	// Optional additional convergence criteria.
+F04	150	comentario_linha	// Best point encountered so far (which is the initial guess).
+F04	158	comentario_linha	// Default stopping criterion.
+F04	166	comentario_linha	// Fit parabola.
+F04	184	comentario_linha	// Parabolic interpolation step.
+F04	188	comentario_linha	// f must not be evaluated too close to a or b.
+F04	197	comentario_linha	// Golden section step.
+F04	206	comentario_linha	// Golden section step.
+F04	215	comentario_linha	// Update by at least "tol1".
+F04	231	comentario_linha	// User-defined convergence checker.
+F04	241	comentario_linha	// Update a, b, v, w and x.
+F04	273	comentario_linha	// Default termination (Brent's criterion).
+F05	55	comentario_linha	// CHECKSTYLE: stop ConstantName
+F05	58	comentario_linha	// CHECKSTYLE: resume ConstantName
+F05	345	comentario_linha	// the vectors are almost aligned, compute using the sine
+F05	353	comentario_linha	// the vectors are sufficiently separated to use the cosine
+F05	460	comentario_linha	// rescale both vectors without losing precision,
+F05	461	comentario_linha	// to ensure their norm are the same order of magnitude
+F05	463	comentario_linha	// we reduce cancellation errors by preconditioning,
+F05	464	comentario_linha	// we replace v1 by v3 = v1 - rho v2 with rho chosen in order to compute
+F05	465	comentario_linha	// v3 without loss of precision. See Kahan lecture
+F05	466	comentario_linha	// "Computing Cross-Products and Rotations in 2- and 3-Dimensional Euclidean Spaces"
+F05	467	comentario_linha	// available at http://www.cs.berkeley.edu/~wkahan/MathH110/Cross.pdf
+F05	469	comentario_linha	// compute rho as an 8 bits approximation of v1.v2 / v2.v2
+F05	472	comentario_linha	// compute cross product from v3 and v2 instead of v1 and v2
+F06	94	comentario_linha	// create the initial clusters
+F06	98	comentario_linha	// iterate through updating the centers until we're done
+F06	167	comentario_linha	// Choose one center uniformly at random from among the data points.
+F06	173	comentario_linha	// For each data point x, compute D(x), the distance between x and
+F06	174	comentario_linha	// the nearest center that has already been chosen.
+F06	184	comentario_linha	// Add one new data point as a center. Each point x is chosen with
+F06	185	comentario_linha	// probability proportional to D(x)2
+F06	213	comentario_linha	// compute the distance variance of the current cluster
+F06	221	comentario_linha	// select the cluster with the largest variance
+F06	230	comentario_linha	// did we find at least one non-empty cluster ?
+F06	235	comentario_linha	// extract a random point from the cluster
+F06	253	comentario_linha	// get the number of points of the current cluster
+F06	256	comentario_linha	// select the cluster with the largest number of points
+F06	264	comentario_linha	// did we find at least one non-empty cluster ?
+F06	269	comentario_linha	// extract a random point from the cluster
+F06	288	comentario_linha	// get the farthest point
+F06	302	comentario_linha	// did we find at least one non-empty cluster ?
+F07	47	comentario_linha	// Boolean utilities
+F07	48	comentario_linha	//--------------------------------------------------------------------------
+F07	70	comentario_linha	// boolean Boolean methods
+F07	71	comentario_linha	//-----------------------------------------------------------------------
+F07	150	comentario_linha	//-----------------------------------------------------------------------
+F07	209	comentario_linha	// Integer to Boolean methods
+F07	210	comentario_linha	//-----------------------------------------------------------------------
+F07	292	comentario_linha	// no match
+F07	327	comentario_linha	// no match
+F07	355	comentario_linha	// no match
+F07	394	comentario_linha	// no match
+F07	398	comentario_linha	// Boolean to Integer methods
+F07	399	comentario_linha	//-----------------------------------------------------------------------
+F07	536	comentario_linha	// String to Boolean methods
+F07	537	comentario_linha	//-----------------------------------------------------------------------
+F07	576	comentario_linha	// no match
+F07	618	comentario_linha	// no match
+F07	622	comentario_linha	// String to boolean methods
+F07	623	comentario_linha	//-----------------------------------------------------------------------
+F07	650	comentario_linha	// Previously used equalsIgnoreCase, which was fast for interned 'true'.
+F07	651	comentario_linha	// Non interned 'true' matched 15 times slower.
+F07	652	comentario_linha	//
+F07	653	comentario_linha	// Optimisation provides same performance as before for interned 'true'.
+F07	654	comentario_linha	// Similar performance for null, 'false', and other strings not length 2/3/4.
+F07	655	comentario_linha	// 'true'/'TRUE' match 4 times slower, 'tRUE'/'True' 7 times slower.
+F07	702	comentario_linha	//    public static void main(String[] args) {
+F07	703	comentario_linha	//        long start = System.currentTimeMillis();
+F07	704	comentario_linha	//        boolean flag = true;
+F07	705	comentario_linha	//        int count = 0;
+F07	706	comentario_linha	//        for (int i = 0; i < 100000000; i++) {
+F07	707	comentario_linha	//            flag = toBoolean("YES");
+F07	708	comentario_linha	//        }
+F07	709	comentario_linha	//        long end = System.currentTimeMillis();
+F07	710	comentario_linha	//        System.out.println((end - start) + " " + flag + " " + count);
+F07	711	comentario_linha	//    }
+F07	743	comentario_linha	// no match
+F07	747	comentario_linha	// Boolean to String methods
+F07	748	comentario_linha	//-----------------------------------------------------------------------
+F07	828	comentario_linha	// boolean to String methods
+F07	829	comentario_linha	//-----------------------------------------------------------------------
+F07	900	comentario_linha	// xor methods
+F07	901	comentario_linha	// ----------------------------------------------------------------------
+F07	917	comentario_linha	// Validates input
+F07	924	comentario_linha	// Loops through array, comparing each item
+F07	927	comentario_linha	// If item is true, and trueCount is < 1, increments count
+F07	928	comentario_linha	// Else, xor fails
+F07	938	comentario_linha	// Returns true if there was exactly 1 true item
+F08	185	comentario_linha	// fall through
+F08	195	comentario_linha	// only loop over what we know we have, as MessageFormat on Java 1.3
+F08	196	comentario_linha	// seems to provide an extra format element:
+F08	289	comentario_linha	// we've already ensured only digits, so unless something
+F08	290	comentario_linha	// outlandishly large was specified we should be okay.
+F08	372	comentario_linha	//fall through:
+F09	62	comentario_linha	// Clone
+F09	63	comentario_linha	//-----------------------------------------------------------------------
+F09	87	comentario_linha	// stream closed in the finally
+F09	94	comentario_linha	// see above
+F09	113	comentario_linha	// Serialize
+F09	114	comentario_linha	//-----------------------------------------------------------------------
+F09	136	comentario_linha	// stream closed in the finally
+F09	147	comentario_linha	// NOPMD
+F09	148	comentario_linha	// ignore close exception
+F09	167	comentario_linha	// Deserialize
+F09	168	comentario_linha	//-----------------------------------------------------------------------
+F09	190	comentario_linha	// stream closed in the finally
+F09	203	comentario_linha	// NOPMD
+F09	204	comentario_linha	// ignore close exception
+F09	236	referencia_issue	LANG-626
+F10	66	comentario_linha	//-----------------------------------------------------------------------
+F10	129	comentario_linha	//-----------------------------------------------------------------------
+F10	146	comentario_linha	//-----------------------------------------------------------------------
+F10	181	comentario_linha	//-----------------------------------------------------------------------
+F10	195	comentario_linha	//-----------------------------------------------------------------------
+F10	215	comentario_linha	//-----------------------------------------------------------------------
+F10	226	comentario_linha	//-----------------------------------------------------------------------
+F10	237	comentario_linha	//syncd
+F10	253	comentario_linha	//syncd
+F10	258	comentario_linha	//-----------------------------------------------------------------------
+F10	269	comentario_linha	//syncd
+F10	286	comentario_linha	//syncd
+F11	36	comentario_linha	// TODO: Protect from ArrayIndexOutOfBounds
+F12	133	comentario_linha	//TreeMap will throw ClassCastException if v is not comparable
+F12	192	comentario_linha	//-------------------------------------------------------------------------
+F12	226	comentario_linha	// ignore and return 0 -- ClassCastException will be thrown if value is not comparable
+F12	261	comentario_linha	//-------------------------------------------------------------
+F12	313	comentario_linha	//-----------------------------------------------------------------------------------------
+F12	342	comentario_linha	// v is not comparable
+F12	346	comentario_linha	// v is comparable, but less than first value
+F12	350	comentario_linha	// v is comparable, but greater than the last value
+F12	401	comentario_linha	//----------------------------------------------------------------------------------------------
+P01	41	referencia_issue	LANG-882
+P01	74	comentario_linha	// descend so as to get a greedy algorithm
+P02	92	comentario_linha	// Do nothing.
+P02	104	comentario_linha	// Do nothing.

@@ -1,0 +1,5 @@
+org.apache.commons.math.stat.clustering.F06Test::testeListaVazia	PASS
+org.apache.commons.math.stat.clustering.F06Test::testePontosAgrupados	PASS
+org.apache.commons.math.stat.clustering.F06Test::testePontosNegativos	PASS
+org.apache.commons.math.stat.clustering.F06Test::testeUmCluster	PASS
+org.apache.commons.math.stat.clustering.F06Test::testeUmPontoPorCluster	PASS

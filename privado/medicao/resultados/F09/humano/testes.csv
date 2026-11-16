@@ -1,0 +1,4 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.lang3.F09Test::testCloneInteger,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang3.F09Test::testCloneString,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.lang3.F09Test::testCloneNull,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
