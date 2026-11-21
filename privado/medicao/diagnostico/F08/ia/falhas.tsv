@@ -1,0 +1,3 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F08	ia	org.apache.commons.lang.text.F09Test::testCustomFormatWithArgumentsParsedAndPassedToFactory	b	FAIL	org.junit.ComparisonFailure	expected:<Result: TAG:[ ]message> but was:<Result: TAG:[]message>	org.apache.commons.lang.text.F09Test.testCustomFormatWithArgumentsParsedAndPassedToFactory(F09Test.java:132)
+F08	ia	org.apache.commons.lang.text.F09Test::testCustomFormatWithArgumentsParsedAndPassedToFactory	f	FAIL	org.junit.ComparisonFailure	expected:<Result: TAG:[ ]message> but was:<Result: TAG:[]message>	org.apache.commons.lang.text.F09Test.testCustomFormatWithArgumentsParsedAndPassedToFactory(F09Test.java:132)

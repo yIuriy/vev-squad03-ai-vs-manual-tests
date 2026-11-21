@@ -1,0 +1,5 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F03	humano	org.apache.commons.lang.time.F03Test::tempoAtualValido	b	FAIL	java.lang.AssertionError	null	org.apache.commons.lang.time.F03Test.tempoAtualValido(F03Test.java:20)
+F03	humano	org.apache.commons.lang.time.F03Test::testeSuspende	b	FAIL	java.lang.IllegalMonitorStateException	null	org.apache.commons.lang.time.F03Test.testeSuspende(F03Test.java:32)
+F03	humano	org.apache.commons.lang.time.F03Test::tempoAtualValido	f	FAIL	java.lang.AssertionError	null	org.apache.commons.lang.time.F03Test.tempoAtualValido(F03Test.java:20)
+F03	humano	org.apache.commons.lang.time.F03Test::testeSuspende	f	FAIL	java.lang.IllegalMonitorStateException	null	org.apache.commons.lang.time.F03Test.testeSuspende(F03Test.java:32)

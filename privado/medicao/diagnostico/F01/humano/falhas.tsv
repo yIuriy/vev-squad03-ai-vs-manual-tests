@@ -1,0 +1,3 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F01	humano	org.apache.commons.math.optimization.univariate.F01Test::initializationError	b	FAIL	java.lang.Exception	No runnable methods	Diagnostico.lambda$main$1(Diagnostico.java:26)
+F01	humano	org.apache.commons.math.optimization.univariate.F01Test::initializationError	f	FAIL	java.lang.Exception	No runnable methods	Diagnostico.lambda$main$1(Diagnostico.java:26)

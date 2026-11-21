@@ -1,0 +1,5 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F11	humano	org.apache.commons.lang3.text.translate.F11Test::leavesUnterminatedEntityUnchanged	b	FAIL	java.lang.StringIndexOutOfBoundsException	String index out of range: 13	org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:48)
+F11	humano	org.apache.commons.lang3.text.translate.F11Test::translatesSuplementaryCodePoint	b	FAIL	org.junit.ComparisonFailure	expected:<[𝄞]> but was:<[턞]>	org.apache.commons.lang3.text.translate.F11Test.translatesSuplementaryCodePoint(F11Test.java:39)
+F11	humano	org.apache.commons.lang3.text.translate.F11Test::leavesUnterminatedEntityUnchanged	f	FAIL	java.lang.StringIndexOutOfBoundsException	String index out of range: 13	org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:48)
+F11	humano	org.apache.commons.lang3.text.translate.F11Test::translatesSuplementaryCodePoint	f	PASS			

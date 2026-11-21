@@ -71,6 +71,7 @@ Which file produces which table of the article:
 | Table 2 (deviations from the plan) | `privado/log_curadoria.md`, amendments in `docs/protocolo_medicao.md` |
 | Table 3 (results per fault) | `privado/medicao/resultados_finais.csv` (from `scripts/consolidar.py`) |
 | Table 4 (summary per condition) | `python scripts/tabelas.py` |
+| Patch-line execution and false-alarm causes (discussion) | `privado/medicao/diagnostico/RESUMO.md` (from `scripts/diagnosticar.sh`, `scripts/resumo_diagnostico.py`) |
 
 ## Anonymization
 

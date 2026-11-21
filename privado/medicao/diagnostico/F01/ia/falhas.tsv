@@ -1,0 +1,3 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F01	ia	org.apache.commons.math.optimization.univariate.F01Test::testSubsequentStartsUseGeneratorBoundedMinAndMax	b	PASS			
+F01	ia	org.apache.commons.math.optimization.univariate.F01Test::testSubsequentStartsUseGeneratorBoundedMinAndMax	f	FAIL	java.lang.AssertionError	expected:<12.0> but was:<10.0>	org.apache.commons.math.optimization.univariate.F01Test.testSubsequentStartsUseGeneratorBoundedMinAndMax(F01Test.java:247)

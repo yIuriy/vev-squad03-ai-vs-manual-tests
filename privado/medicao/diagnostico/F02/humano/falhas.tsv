@@ -1,0 +1,7 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F02	humano	org.apache.commons.math.fraction.F02Test::testFractionInDouble	b	FAIL	java.lang.AssertionError	Use assertEquals(expected, actual, delta) to compare floating-point numbers	org.apache.commons.math.fraction.F02Test.testFractionInDouble(F02Test.java:51)
+F02	humano	org.apache.commons.math.fraction.F02Test::testGetDenominator	b	FAIL	java.lang.AssertionError	expected:<4> but was:<3>	org.apache.commons.math.fraction.F02Test.testGetDenominator(F02Test.java:45)
+F02	humano	org.apache.commons.math.fraction.F02Test::testIntValue	b	FAIL	java.lang.AssertionError	expected:<2> but was:<0>	org.apache.commons.math.fraction.F02Test.testIntValue(F02Test.java:57)
+F02	humano	org.apache.commons.math.fraction.F02Test::testFractionInDouble	f	FAIL	java.lang.AssertionError	Use assertEquals(expected, actual, delta) to compare floating-point numbers	org.apache.commons.math.fraction.F02Test.testFractionInDouble(F02Test.java:51)
+F02	humano	org.apache.commons.math.fraction.F02Test::testGetDenominator	f	FAIL	java.lang.AssertionError	expected:<4> but was:<3>	org.apache.commons.math.fraction.F02Test.testGetDenominator(F02Test.java:45)
+F02	humano	org.apache.commons.math.fraction.F02Test::testIntValue	f	FAIL	java.lang.AssertionError	expected:<2> but was:<0>	org.apache.commons.math.fraction.F02Test.testIntValue(F02Test.java:57)

@@ -1,0 +1,3 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F12	humano	org.apache.commons.math.stat.F12Test::getSumFreqTest	b	FAIL	java.lang.AssertionError	expected:<3> but was:<25>	org.apache.commons.math.stat.F12Test.getSumFreqTest(F12Test.java:33)
+F12	humano	org.apache.commons.math.stat.F12Test::getSumFreqTest	f	FAIL	java.lang.AssertionError	expected:<3> but was:<25>	org.apache.commons.math.stat.F12Test.getSumFreqTest(F12Test.java:33)

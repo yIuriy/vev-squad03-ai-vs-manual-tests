@@ -72,6 +72,13 @@ Per-test outcomes go to `privado/medicao/resultados/<fault>/<condition>/testes.c
 
 A suite detects the fault if at least one test is `DETECTA`. Coverage in the article is measured on the fixed version.
 
+Complementary diagnostics (not part of the tables): `scripts/diagnosticar.sh <fault> <condition>` records the failure message of every test not classified as `PASSA` and whether the suite executed the lines changed by the patch; `python scripts/resumo_diagnostico.py` consolidates the 24 suites. Our output and its interpretation are in `privado/medicao/diagnostico/RESUMO.md`.
+
+```bash
+docker run --rm -v "${PWD}:/work" vev-d4j bash -c 'for f in F01 F02 F03 F04 F05 F06 F07 F08 F09 F10 F11 F12; do for c in humano ia; do bash scripts/diagnosticar.sh $f $c; done; done'
+python scripts/resumo_diagnostico.py
+```
+
 Expected differences: the F08 human suite (anonymized test data) may change the coverage of that suite slightly; JaCoCo `.exec` files are binary and change on every run. Detection and coverage of the other 23 suites should match exactly.
 
 ## Level 3: run the experiment again

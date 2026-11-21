@@ -1,0 +1,3 @@
+codigo	condicao	teste	versao	status	excecao	mensagem	local
+F12	ia	org.apache.commons.math.stat.F12Test::testAddNonComparableObjectThrowsIllegalArgumentException	b	PASS			
+F12	ia	org.apache.commons.math.stat.F12Test::testAddNonComparableObjectThrowsIllegalArgumentException	f	FAIL	java.lang.Exception	Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ClassCastException>	Diagnostico.lambda$main$1(Diagnostico.java:26)
