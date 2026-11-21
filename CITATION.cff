@@ -22,9 +22,8 @@ authors:
     given-names: Sidnei
     affiliation: Universidade Federal do Pampa
 repository-code: "https://github.com/yIuriy/vev-squad03-ai-vs-manual-tests"
-license:
-  - MIT
-  - CC-BY-4.0
+license: CC-BY-4.0
+version: v1.0
 date-released: 2026-11-21
 keywords:
   - software testing
