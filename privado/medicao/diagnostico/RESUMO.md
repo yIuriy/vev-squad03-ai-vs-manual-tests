@@ -22,8 +22,8 @@ Falso alarme: teste que falha na versão corrigida nas 3 repetições. Os 11 con
 
 | Falha | Suíte | Teste | Mensagem na versão corrigida | Na versão com bug | Causa |
 |---|---|---|---|---|---|
-| F01 | IA | `testSubsequentStartsUseGeneratorBoundedMinAndMax` | `expected:<12.0> but was:<10.0>` | passa | **Oráculo invertido**: o teste afirma que os limites das partidas seguintes são sorteados (12 e 18), justamente o comportamento que o patch do Math-62 corrige. |
-| F12 | IA | `testAddNonComparableObjectThrowsIllegalArgumentException` | esperava `IllegalArgumentException`, veio `ClassCastException` | passa | **Oráculo invertido**: o teste espera a exceção que a versão com bug lança. |
+| F01 | IA | `testSubsequentStartsUseGeneratorBoundedMinAndMax` | `expected:<12.0> but was:<10.0>` | passa | **Oráculo invertido**: o teste afirma que os limites das partidas seguintes são sorteados (12 e 18), justamente o comportamento que o patch do Math-62 corrige. Esse comportamento não está documentado no Javadoc; o teste afirma os valores que o código com bug calcula. |
+| F12 | IA | `testAddNonComparableObjectThrowsIllegalArgumentException` | esperava `IllegalArgumentException`, veio `ClassCastException` | passa | **Oráculo invertido**: o teste espera a exceção que a versão com bug lança. O Javadoc da versão com bug admite essa leitura: declara `IllegalArgumentException` para valor não comparável com as entradas anteriores e `ClassCastException` para valor que não é `Comparable`; um `new Object()` se encaixa nos dois casos, e a correção escolheu o segundo. |
 | F08 | IA | `testCustomFormatWithArgumentsParsedAndPassedToFactory` | `expected:<Result: TAG:[ ]message> but was:<Result: TAG:[]message>` | falha igual | Valor esperado errado: supõe que o espaço final do argumento do formato é preservado. |
 | F02 | Humano | `testGetDenominator` | `expected:<4> but was:<3>` | falha igual | Valor esperado errado (denominador de 2/3). |
 | F02 | Humano | `testIntValue` | `expected:<2> but was:<0>` | falha igual | Valor esperado errado (parte inteira de 2/3). |
