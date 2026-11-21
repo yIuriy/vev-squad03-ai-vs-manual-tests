@@ -473,3 +473,8 @@ Leitura do rascunho do artigo (seções 3.4 a 3.6) mostrou divergências com o q
   - Execução das linhas alteradas pelo patch: a IA executou todas em 8 falhas, parte em 3 e nenhuma em 1, sem detectar nenhuma. Os humanos executaram todas em 2 (F06, F11), parte em 1 e nenhuma em 9; o F11 foi detectado. `cobertura_patch.csv`: SHA-256 `999f57ce4b344abb910c733cad12619817263d79886374a15f7c4ce386ebb3a7`.
   - Mensagens de falha dos 11 falsos alarmes: `falhas.csv`, SHA-256 `a50cbd65f59a5cc88ce1bac23e5927b51f0cc5ce3963c9212092c2c4e0fdb3b2`. Dois testes de IA (F01, F12) passam na versão com bug e falham na corrigida, ou seja, tomam o comportamento com bug como esperado (oráculo invertido). Pelo critério do protocolo, não contam como detecção, e a FDR da IA continua 0/12.
   - A classificação das causas na tabela do `RESUMO.md` é interpretação do Claude, a partir da mensagem e do código de cada teste. Deve ser conferida pelo grupo antes de entrar no artigo.
+
+## 2026-11-21 — Depósito no Zenodo
+
+- Repositório ativado pelo curador na integração GitHub do Zenodo. A primeira release `v1.0` falhou no Zenodo ("Citation metadata load failed": o `CITATION.cff` listava duas licenças). Foi adicionado um `.zenodo.json` com uma única licença (CC BY 4.0, para os dados; o código continua MIT, conforme o README), e a release `v1.0` foi apagada e criada de novo no commit `77b2c66`.
+- Publicado no Zenodo: **DOI 10.5281/zenodo.24423864** (versão v1.0). O DOI foi adicionado ao README e ao `CITATION.cff` depois do depósito, então a cópia arquivada não o contém.

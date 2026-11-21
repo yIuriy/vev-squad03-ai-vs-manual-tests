@@ -1,5 +1,7 @@
 # Human vs. Generative AI JUnit Tests on Real Defects4J Faults
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24423864.svg)](https://doi.org/10.5281/zenodo.24423864)
+
 Replication package for the article **"Effectiveness of Generative AI in Test Case Generation: A Comparative Study with Manual Test Case Design"** (AL0342 Software Verification and Validation, Universidade Federal do Pampa, Squad 03, 2026).
 
 We ran a controlled, paired experiment on 12 real faults from Defects4J 3.0.1 (6 from Apache Commons Lang, 6 from Apache Commons Math). For each fault, one human tester wrote a JUnit 4 suite in 30 minutes without running it, and Gemini 3.8 Flash generated one suite from a fixed prompt. Every suite was measured in Docker against the buggy and the fixed version of the program, 3 times on each version, for fault detection, line coverage and branch coverage (JaCoCo 0.8.12).
@@ -89,4 +91,4 @@ Gemini 3.8 Flash generated the suites of the AI condition, as part of the experi
 
 ## How to cite
 
-See [CITATION.cff](CITATION.cff).
+Archived on Zenodo: [doi:10.5281/zenodo.24423864](https://doi.org/10.5281/zenodo.24423864) (version v1.0). See also [CITATION.cff](CITATION.cff).
