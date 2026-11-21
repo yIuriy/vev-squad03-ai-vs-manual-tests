@@ -1,0 +1,3 @@
+codigo,projeto,bug,classe,ncloc
+P01,Lang,4,org.apache.commons.lang3.text.translate.LookupTranslator,44
+P02,Math,58,org.apache.commons.math.optimization.fitting.GaussianFitter,147

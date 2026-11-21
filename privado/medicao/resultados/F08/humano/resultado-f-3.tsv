@@ -1,0 +1,6 @@
+org.apache.commons.lang.text.F08Test::testeAlterarPad	PASS
+org.apache.commons.lang.text.F08Test::testeIndiceInvalido	PASS
+org.apache.commons.lang.text.F08Test::testePadVazio	PASS
+org.apache.commons.lang.text.F08Test::testeSemArgu	PASS
+org.apache.commons.lang.text.F08Test::testeSubDoisArgu	PASS
+org.apache.commons.lang.text.F08Test::testeSubUmArgu	PASS

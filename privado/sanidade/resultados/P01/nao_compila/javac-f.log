@@ -1,0 +1,6 @@
+/work/privado/sanidade/P01/nao_compila/QuebradoTest.java:7: error: cannot find symbol
+        new LookupTranslator(new String[][] { { "a", "b" } }).metodoQueNaoExiste();
+                                                             ^
+  symbol:   method metodoQueNaoExiste()
+  location: class LookupTranslator
+1 error

@@ -1,0 +1,8 @@
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit01	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit02	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit03	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit04	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit05	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit06	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testFit07	PASS
+org.apache.commons.math.optimization.fitting.GaussianFitterTest::testMath519	FAIL

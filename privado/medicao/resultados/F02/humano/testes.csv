@@ -1,0 +1,6 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.math.fraction.F02Test::testGetNumerator,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.fraction.F02Test::testGetDenominator,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FALSO_ALARME
+org.apache.commons.math.fraction.F02Test::testNegativeDenominator,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.fraction.F02Test::testFractionInDouble,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FALSO_ALARME
+org.apache.commons.math.fraction.F02Test::testIntValue,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FALSO_ALARME

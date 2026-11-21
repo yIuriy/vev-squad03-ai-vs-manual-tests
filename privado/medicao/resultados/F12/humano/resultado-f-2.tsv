@@ -1,0 +1,3 @@
+org.apache.commons.math.stat.F12Test::addValueTest	PASS
+org.apache.commons.math.stat.F12Test::clearTest	PASS
+org.apache.commons.math.stat.F12Test::getSumFreqTest	FAIL

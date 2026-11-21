@@ -1,0 +1,3 @@
+org.apache.commons.lang.F10Test::testEmptyLocale	PASS
+org.apache.commons.lang.F10Test::testInvalidLocale	PASS
+org.apache.commons.lang.F10Test::testLocaleWithNull	PASS

@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below."
+title: "Replication package: Effectiveness of Generative AI in Test Case Generation: A Comparative Study with Manual Test Case Design"
+type: dataset
+authors:
+  - family-names: Bento Laner
+    given-names: Dyonathan
+    affiliation: Universidade Federal do Pampa
+  - family-names: da Silva Fernandes
+    given-names: Iuri
+    affiliation: Universidade Federal do Pampa
+  - family-names: Sarotti da Silva Rios
+    given-names: Lara
+    affiliation: Universidade Federal do Pampa
+  - family-names: Antunes Nunes
+    given-names: Tamires
+    affiliation: Universidade Federal do Pampa
+  - family-names: de Menezes
+    given-names: Rafaela
+    affiliation: Universidade Federal do Pampa
+  - family-names: Correia Junior
+    given-names: Sidnei
+    affiliation: Universidade Federal do Pampa
+repository-code: "https://github.com/yIuriy/vev-squad03-ai-vs-manual-tests"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-11-21
+keywords:
+  - software testing
+  - generative AI
+  - unit test generation
+  - Defects4J
+  - code coverage
+  - fault detection

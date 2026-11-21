@@ -1,0 +1,12 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.math.geometry.F05Test::testeSoma,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeCoordenadas,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeMultiplicacaoPorZero,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeNorma,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeNaN,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeVetorZero,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeNormalizacao,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeDistancia,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeSubtracao,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeMultiplicacao,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.geometry.F05Test::testeNormalizacaoZero,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FALSO_ALARME

@@ -1,0 +1,5 @@
+org.apache.commons.lang3.text.translate.F11Test::leavesUnterminatedEntityUnchanged	FAIL
+org.apache.commons.lang3.text.translate.F11Test::translatesDecimalEntity	PASS
+org.apache.commons.lang3.text.translate.F11Test::translatesEntityInsideText	PASS
+org.apache.commons.lang3.text.translate.F11Test::translatesHexEntity	PASS
+org.apache.commons.lang3.text.translate.F11Test::translatesSuplementaryCodePoint	FAIL

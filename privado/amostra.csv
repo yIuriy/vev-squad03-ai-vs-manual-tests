@@ -1,0 +1,13 @@
+codigo,projeto,bug,classe,ncloc
+F01,Math,62,org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizer,101
+F02,Math,91,org.apache.commons.math.fraction.Fraction,268
+F03,Lang,55,org.apache.commons.lang.time.StopWatch,93
+F04,Math,23,org.apache.commons.math3.optimization.univariate.BrentOptimizer,184
+F05,Math,55,org.apache.commons.math.geometry.Vector3D,205
+F06,Math,57,org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,173
+F07,Lang,51,org.apache.commons.lang.BooleanUtils,291
+F08,Lang,43,org.apache.commons.lang.text.ExtendedMessageFormat,274
+F09,Lang,13,org.apache.commons.lang3.SerializationUtils,109
+F10,Lang,57,org.apache.commons.lang.LocaleUtils,134
+F11,Lang,28,org.apache.commons.lang3.text.translate.NumericEntityUnescaper,34
+F12,Math,90,org.apache.commons.math.stat.Frequency,184

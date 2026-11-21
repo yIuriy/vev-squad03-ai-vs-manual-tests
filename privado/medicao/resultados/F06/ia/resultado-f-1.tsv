@@ -1,0 +1,17 @@
+org.apache.commons.math.stat.clustering.F06Test::testClusterCentersAreNotNull	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterDuplicatePointsStayTogether	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterMaxIterationsOnePerformsSingleIteration	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterMaxIterationsZeroReturnsInitialAssignment	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterModerateCoordinateValues	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterMultiplePointsSingleClusterCentroid	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterNegativeMaxIterationsTreatedAsUnlimited	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterPreservesAllPointsWithoutLoss	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterSinglePointSingleCluster	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterTwoDistinctClustersPartition	PASS
+org.apache.commons.math.stat.clustering.F06Test::testClusterWithKEqualsPointsCount	PASS
+org.apache.commons.math.stat.clustering.F06Test::testConstructorWithCustomStrategyCreatesInstance	PASS
+org.apache.commons.math.stat.clustering.F06Test::testConstructorWithDefaultStrategySetsLargestVariance	PASS
+org.apache.commons.math.stat.clustering.F06Test::testEmptyClusterStrategyErrorThrowsException	PASS
+org.apache.commons.math.stat.clustering.F06Test::testEmptyClusterStrategyFarthestPointResolvesEmptyCluster	PASS
+org.apache.commons.math.stat.clustering.F06Test::testEmptyClusterStrategyLargestPointsNumberResolvesEmptyCluster	PASS
+org.apache.commons.math.stat.clustering.F06Test::testEmptyClusterStrategyLargestVarianceResolvesEmptyCluster	PASS

@@ -1,0 +1,6 @@
+teste,b1,b2,b3,f1,f2,f3,classificacao
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserBasicLogic,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserConstructorThrowsExceptionOnInsufficientPoints,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserConstructorThrowsExceptionOnNullInput,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserReturnsClone,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
+org.apache.commons.math.optimization.fitting.P02Test::testParameterGuesserEncapsulation,PASS,PASS,PASS,PASS,PASS,PASS,PASSA
