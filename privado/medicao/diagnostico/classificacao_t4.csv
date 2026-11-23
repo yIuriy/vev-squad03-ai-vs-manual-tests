@@ -1,0 +1,13 @@
+falha,classificador_1,classificador_2,concordam,final,desempate
+F01,C,C,sim,C,
+F02,B,B,sim,B,
+F03,C,C,sim,C,
+F04,C,B,nao,C,curador
+F05,C,B,nao,B,curador
+F06,B,B,sim,B,
+F07,C,B,nao,C,curador
+F08,A,A,sim,A,
+F09,B,B,sim,B,
+F10,B,C,nao,B,curador
+F11,C,B,nao,B,curador
+F12,C,C,sim,C,
