@@ -491,3 +491,10 @@ Leitura do rascunho do artigo (seções 3.4 a 3.6) mostrou divergências com o q
 - Feedback do Andamento 5: a versão v1.0 no Zenodo (21/11) não contém os testes gatilho (`privado/medicao/diagnostico/gatilhos/`), a classificação da Tabela 5 (`classificacao_t4.csv`) nem a nota sobre o Javadoc do F12, que o artigo cita. Criada a release `v1.1` para arquivá-los.
 - O README e o `CITATION.cff` passam a apontar para o DOI conceito do Zenodo (`10.5281/zenodo.24423863`), que resolve sempre para a versão mais recente. O artigo cita o DOI da versão v1.1.
 - O README marca a Tabela 5 e o diagnóstico como análise exploratória, definida depois dos resultados (21 e 23/11).
+
+## 2026-11-28 — Checklist de LLM, roteiro da Tabela 5 e release v1.2
+
+- A professora enviou o checklist de relato de estudo com LLM da disciplina (reduzido de Baltes et al., 2026). Aplicado item por item em `docs/llm_reporting_checklist.md`, com onde cada item está no artigo ou por que não se aplica.
+- O checklist exige publicar os instrumentos da validação humana e declarar a concordância com limiar. Publicado o roteiro da classificação da Tabela 5 em `docs/roteiro_classificacao_t4.md`, reproduzindo as definições e o procedimento dados aos classificadores em 21/11 e a regra de desempate de 23/11.
+- Concordância recalculada com o alfa de Krippendorff (nominal), a medida dos limiares do checklist: alfa = 0,30 (kappa de Cohen 0,31), abaixo de 0,667. **Decisão do curador:** a divisão entre B e C passa a ser apresentada no artigo só como descritiva, sem sustentar conclusão; a divisão entre A e "B ou C" vem do diagnóstico automático e se mantém (concordância de 12 em 12).
+- Criada a release `v1.2` com esses dois documentos.

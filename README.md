@@ -47,7 +47,7 @@ Glossary of folder and column names:
 | Path | Contents |
 |---|---|
 | [env/Dockerfile](env/Dockerfile) | Ubuntu 22.04, OpenJDK 11, Defects4J v3.0.1, JaCoCo 0.8.12 |
-| [docs/](docs) | Protocols: fault selection (`protocolo_selecao.md`), AI generation (`protocolo_ia.md`, `prompt_ia.txt`, `configuracao_ia.md`), measurement (`protocolo_medicao.md`), kit neutralization, participant instructions, VS Code profile |
+| [docs/](docs) | Protocols: fault selection (`protocolo_selecao.md`), AI generation (`protocolo_ia.md`, `prompt_ia.txt`, `configuracao_ia.md`), measurement (`protocolo_medicao.md`), kit neutralization, participant instructions, VS Code profile, the classification guide of Table 5 (`roteiro_classificacao_t4.md`), and the LLM reporting checklist as applied (`llm_reporting_checklist.md`) |
 | [kit/](kit) | What each tester received for each fault: the class under test with fault-revealing comments removed, a test skeleton and instructions. `SHA256SUMS` freezes it |
 | [scripts/](scripts) | Every step of the pipeline, from fault selection to the final tables |
 | [privado/](privado) | All experiment data: sample, assignments, frozen suites, review records, raw measurement output, curation log |
@@ -77,6 +77,8 @@ Which file produces which table of the article:
 | Patch-line execution and false-alarm causes (Discussion) | `privado/medicao/diagnostico/RESUMO.md`, `cobertura_patch.csv`, `falhas.csv` (from `scripts/diagnosticar.sh` and `scripts/resumo_diagnostico.py`) |
 
 Table 5 and the diagnostic files are an **exploratory analysis defined after the results were known** (21 and 23 November 2026), to explain the 0/12 detections of the AI condition; they do not change any number in Tables 3 and 4. The curation log records when each was done.
+
+The LLM reporting checklist of the course, applied item by item, is in [docs/llm_reporting_checklist.md](docs/llm_reporting_checklist.md).
 
 ## Anonymization
 
