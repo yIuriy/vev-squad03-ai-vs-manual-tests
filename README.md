@@ -73,7 +73,10 @@ Which file produces which table of the article:
 | Table 2 (deviations from the plan) | `privado/log_curadoria.md`, amendments in `docs/protocolo_medicao.md` |
 | Table 3 (results per fault) | `privado/medicao/resultados_finais.csv` (from `scripts/consolidar.py`) |
 | Table 4 (summary per condition) | `python scripts/tabelas.py` |
-| Patch-line execution and false-alarm causes (discussion) | `privado/medicao/diagnostico/RESUMO.md` (from `scripts/diagnosticar.sh`, `scripts/resumo_diagnostico.py`) |
+| Table 5 (causes of the 12 AI non-detections) | `privado/medicao/diagnostico/classificacao_t4.csv` (two independent classifications and the tie-break), using `privado/medicao/diagnostico/gatilhos/` |
+| Patch-line execution and false-alarm causes (Discussion) | `privado/medicao/diagnostico/RESUMO.md`, `cobertura_patch.csv`, `falhas.csv` (from `scripts/diagnosticar.sh` and `scripts/resumo_diagnostico.py`) |
+
+Table 5 and the diagnostic files are an **exploratory analysis defined after the results were known** (21 and 23 November 2026), to explain the 0/12 detections of the AI condition; they do not change any number in Tables 3 and 4. The curation log records when each was done.
 
 ## Anonymization
 
