@@ -1,6 +1,6 @@
 # Human vs. Generative AI JUnit Tests on Real Defects4J Faults
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24423864.svg)](https://doi.org/10.5281/zenodo.24423864)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24423863.svg)](https://doi.org/10.5281/zenodo.24423863)
 
 Replication package for the article **"Effectiveness of Generative AI in Test Case Generation: A Comparative Study with Manual Test Case Design"** (AL0342 Software Verification and Validation, Universidade Federal do Pampa, Squad 03, 2026).
 
@@ -94,4 +94,4 @@ Gemini 3.8 Flash generated the suites of the AI condition, as part of the experi
 
 ## How to cite
 
-Archived on Zenodo: [doi:10.5281/zenodo.24423864](https://doi.org/10.5281/zenodo.24423864) (version v1.0). See also [CITATION.cff](CITATION.cff).
+Archived on Zenodo: [doi:10.5281/zenodo.24423863](https://doi.org/10.5281/zenodo.24423863) (all versions; this DOI always resolves to the latest one, and each version has its own DOI on the Zenodo page). See also [CITATION.cff](CITATION.cff).

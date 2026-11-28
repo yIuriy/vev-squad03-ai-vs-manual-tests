@@ -485,3 +485,9 @@ Leitura do rascunho do artigo (seções 3.4 a 3.6) mostrou divergências com o q
 - As 12 suítes de IA, nenhuma das quais detectou a falha, foram classificadas por dois membros do grupo, separadamente e sem IA, comparando cada suíte (`privado/medicao/entrada/<falha>/ia/`) com o teste gatilho do Defects4J (`privado/medicao/diagnostico/gatilhos/`). Categorias: A, não executou nenhuma linha do patch; B, executou as linhas do patch sem a entrada que dispara a falha; C, usou entrada equivalente à do teste gatilho, mas a asserção aceitou o comportamento errado.
 - Concordância: 7 de 12 (F01, F02, F03, F06, F08, F09, F12); kappa de Cohen 0,31. As 5 divergências (F04, F05, F07, F10, F11) foram resolvidas pelo curador, com a regra "algum teste da IA usa entrada equivalente à do gatilho? sim, C; não, B": F04 C, F05 B, F07 C, F10 B, F11 B.
 - Resultado final: A 1 (F08); B 6 (F02, F05, F06, F09, F10, F11); C 5 (F01, F03, F04, F07, F12). Registro em `privado/medicao/diagnostico/classificacao_t4.csv` (SHA-256 `1001ea1f49391af67dc9469b50de518993704367d3abf46c1bab8ec778b33dad`), com as duas classificações e o desempate.
+
+## 2026-11-28 — Release v1.1
+
+- Feedback do Andamento 5: a versão v1.0 no Zenodo (21/11) não contém os testes gatilho (`privado/medicao/diagnostico/gatilhos/`), a classificação da Tabela 5 (`classificacao_t4.csv`) nem a nota sobre o Javadoc do F12, que o artigo cita. Criada a release `v1.1` para arquivá-los.
+- O README e o `CITATION.cff` passam a apontar para o DOI conceito do Zenodo (`10.5281/zenodo.24423863`), que resolve sempre para a versão mais recente. O artigo cita o DOI da versão v1.1.
+- O README marca a Tabela 5 e o diagnóstico como análise exploratória, definida depois dos resultados (21 e 23/11).

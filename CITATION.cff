@@ -21,11 +21,11 @@ authors:
   - family-names: Correia Junior
     given-names: Sidnei
     affiliation: Universidade Federal do Pampa
-doi: 10.5281/zenodo.24423864
+doi: 10.5281/zenodo.24423863
 repository-code: "https://github.com/yIuriy/vev-squad03-ai-vs-manual-tests"
 license: CC-BY-4.0
-version: v1.0
-date-released: 2026-11-21
+version: v1.1
+date-released: 2026-11-28
 keywords:
   - software testing
   - generative AI
